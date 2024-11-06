@@ -29,7 +29,8 @@ function appendPhotos(photos, root) {
         const cardHtml = `
          <div class="col-4">
           <div class="card">
-             <img src="${url}" alt="">
+             <img class="pin" src="./img/pin.svg" alt="">
+             <img class="random-pic" src="${url}" alt="">
              <p class="album">${title}</p>
 
           </div>
