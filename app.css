@@ -69,9 +69,44 @@ body {
     margin-bottom: 20px;
 }
 
-.pin {
+.pin1 {
     width: 40px;
     position:absolute;
     top: -30px;
-    left: 75px;
+    left: 110px;
+}
+
+.pin2 {
+    width: 40px;
+    position:absolute;
+    top: -30px;
+    left: 500px;
+}
+
+.pin3 {
+    width: 40px;
+    position:absolute;
+    top: -30px;
+    left: 900px;
+}
+
+.pin4 {
+    width: 40px;
+    position:absolute;
+    top: 340px;
+    left: 110px;
+}
+
+.pin5 {
+    width: 40px;
+    position:absolute;
+    top: 340px;
+    left: 500px;
+}
+
+.pin6 {
+    width: 40px;
+    position:absolute;
+    top: 340px;
+    left: 900px;
 }

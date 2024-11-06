@@ -16,20 +16,22 @@ axios.get(endPoint, {
         console.log(photos)
         appendPhotos(photos, albumPhotos)
 
+
     })
 
 function appendPhotos(photos, root) {
+
     photos.forEach((photo) => {
         const { albumId, title, id, url, thumbnailUrl } = photo
         const cardHtml = `
-        <div class="col-4">
-                        <div class="card">
-                            <img src="${url}" alt="">
-                            <p class="album">${title}</p>
+         <div class="col-4">
+          <div class="card">
+             <img src="${url}" alt="">
+             <p class="album">${title}</p>
 
-                        </div>
+          </div>
 
-                    </div>
+         </div>
         `
         root.innerHTML += cardHtml
     });
