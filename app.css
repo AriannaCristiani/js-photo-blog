@@ -38,6 +38,7 @@ body {
 	margin-left: 150px ;
 	margin-right: 150px ;
 	gap: 30px;
+    position: relative;;
     
 }
 
@@ -64,5 +65,12 @@ body {
 	width: 100%;
 	object-fit: cover;
 	object-position: center;
-    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.pin {
+    width: 40px;
+    position: absolute;
+    top: -30px;
+    left: 75px;
 }
