@@ -57,6 +57,7 @@ body {
 .card {
     color: gray;
     font-size: 15px;   
+    
 }
 
 .card img {
@@ -70,7 +71,7 @@ body {
 
 .pin {
     width: 40px;
-    position: absolute;
+    position:absolute;
     top: -30px;
     left: 75px;
 }
