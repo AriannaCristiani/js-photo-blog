@@ -18,11 +18,14 @@ axios.get(endPoint, {
 
 
     })
+    .catch((err) =>{
+        console.log(alert('qualcosa è andato storto'))
+    })
 
 function appendPhotos(photos, root) {
 
     photos.forEach((photo) => {
-        const { albumId, title, id, url, thumbnailUrl } = photo
+        const { title, url, } = photo
         const cardHtml = `
          <div class="col-4">
           <div class="card">
