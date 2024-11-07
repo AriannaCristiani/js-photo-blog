@@ -4,7 +4,10 @@ let url_body = 'photos'
 const endPoint = base_url + url_body
 
 const albumPhotos = document.getElementById('album-photos')
-console.log(albumPhotos)
+//console.log(albumPhotos)
+const overlayBox = document.getElementById('over')
+//console.log(overlayBox)
+
 
 axios.get(endPoint, {
     params: {
@@ -16,11 +19,17 @@ axios.get(endPoint, {
         console.log(photos)
         appendPhotos(photos, albumPhotos)
 
+        let arrayCard = []
+        arrayCard.push(photos)
+        //console.log(arrayCard)
+
 
     })
-    .catch((err) =>{
+    .catch((err) => {
         console.log(alert('qualcosa è andato storto'))
     })
+
+
 
 function appendPhotos(photos, root) {
 
@@ -40,3 +49,9 @@ function appendPhotos(photos, root) {
         root.innerHTML += cardHtml
     });
 }
+
+albumPhotos.addEventListener ('click', function() {
+    //console.log('hai cliccato')
+    overlayBox.classList.remove ('display-none')
+    
+})

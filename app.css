@@ -27,8 +27,10 @@ body {
 
 .overlay-box {
     position: relative;
-    
+}
 
+.display-none {
+    display: none;
 }
 
 .overlay {
@@ -125,9 +127,9 @@ body {
 
 /* versione mobile */
 /* @media (max-width: 767.99px) { */
-    .col-4 {
+    /* .col-4 {
         width: calc(100% / 12);
-    }
+    } */
 /* }  */
 
 
