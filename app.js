@@ -7,6 +7,7 @@ const albumPhotos = document.getElementById('album-photos')
 //console.log(albumPhotos)
 const overlayBox = document.getElementById('over')
 //console.log(overlayBox)
+const button = document.getElementById('button')
 
 
 axios.get(endPoint, {
@@ -55,3 +56,12 @@ albumPhotos.addEventListener ('click', function() {
     overlayBox.classList.remove ('display-none')
     
 })
+
+button.addEventListener ('click', function() {
+    //console.log('hai cliccato')
+    overlayBox.classList.add ('display-none')
+    
+})
+
+
+
