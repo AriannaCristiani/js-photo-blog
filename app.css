@@ -25,6 +25,37 @@ body {
     background-image: url(./img/cork.png);
 }
 
+.overlay-box {
+    position: relative;
+    
+
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1 ;
+    background-color: rgba(0, 0, 0, 0.37);
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay {
+    width: 40%;
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: "Comic Neue";
+    font-weight: 700;
+    padding: 5px 10px;
+    
+    
+}
+
 
 .container {
 	width: 100%;
@@ -85,7 +116,7 @@ body {
 }
 
 
-/*versione tablet*/
+/* versione tablet
 @media (max-width: 991.99px) {
 	.col-4 {
         width: calc(100% / 8);
@@ -93,10 +124,10 @@ body {
 }
 
 /* versione mobile */
-@media (max-width: 767.99px) {
+/* @media (max-width: 767.99px) { */
     .col-4 {
         width: calc(100% / 12);
     }
-}
+/* }  */
 
 
