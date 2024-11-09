@@ -4,11 +4,10 @@ let url_body = 'photos'
 const endPoint = base_url + url_body
 
 const albumPhotos = document.getElementById('album-photos')
-//console.log(albumPhotos)
 const overlayBox = document.getElementById('over')
-//console.log(overlayBox)
 const button = document.getElementById('button')
 const imgOverlay = document.getElementById('picture')
+
 
 
 axios.get(endPoint, {
@@ -17,20 +16,19 @@ axios.get(endPoint, {
     }
 })
     .then((res) => {
-        const photos = res.data
-        console.log(photos)
-        appendPhotos(photos, albumPhotos)
-
+        const photos = res.data;
+        console.log(photos);
+        appendPhotos(photos, albumPhotos);
     })
     .catch((err) => {
-        console.log(alert('qualcosa è andato storto'))
+        console.log(alert('qualcosa è andato storto'));
     })
 
 
 function appendPhotos(photos, root) {
 
     photos.forEach((photo) => {
-        const { title, url, } = photo
+        const { title, url, } = photo;
         const cardHtml = `
              <div class="col-4">
               <div class="card">
@@ -41,39 +39,31 @@ function appendPhotos(photos, root) {
              </div>
             `
 
-        root.innerHTML += cardHtml
+        root.innerHTML += cardHtml;
 
     });
 
 
-    const cardsCollection = document.querySelectorAll('.card')
-    // console.log(cardsCollection)
+    const cards = document.querySelectorAll('.card')
+    // console.log(cards)
 
-    cardsCollection.forEach((card, i) => {
+    cards.forEach((card, i) => {
         console.log(card)
 
         card.addEventListener('click', () => {
 
-            overlayBox.classList.remove('display-none')
+            overlayBox.classList.remove('display-none');
 
-            const { url } = photos[i]
-            //console.log(url, imgOverlay)
-            imgOverlay.src = url
-            //console.log('ho click sulla card')
-			
+            const { url } = photos[i];
+
+            imgOverlay.src = url;
+
         })
     })
 }
-
-
 
 
 button.addEventListener('click', function () {
     //console.log('hai cliccato')
     overlayBox.classList.add('display-none')
 })
-
-
-
-
-
