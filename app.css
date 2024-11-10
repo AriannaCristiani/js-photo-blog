@@ -26,7 +26,6 @@ body {
     text-align: center;
     font-size: 30px;
     padding: 20px 20px;
-
 }
 
 
@@ -54,7 +53,7 @@ body {
 }
 
 #picture {
-    width: 50%;
+    width: 35%;
 }
 
 .btn {
@@ -69,22 +68,19 @@ body {
 .container {
     width: 100%;
     display: block;
-    margin: 0 auto;
     margin-top: 50px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     margin-left: 150px;
     margin-right: 150px;
     gap: 30px;
-
 }
 
-.row>* {
+.row > * {
     width: 100%;
     padding: 20px 10px;
 
@@ -104,12 +100,12 @@ body {
     color: gray;
     font-size: 15px;
     position: relative;
-
 }
 
 .card .random-pic {
     display: block;
-    height: 100%;
+    object-fit: cover;
+    height: 50%;
     width: 100%;
     margin-bottom: 20px;
 }
