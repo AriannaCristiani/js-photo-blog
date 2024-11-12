@@ -45,7 +45,7 @@ function appendPhotos(photos, root) {
 
 
     const cards = document.querySelectorAll('.card')
-    // console.log(cards)
+    //console.log(cards)
 
     cards.forEach((card, i) => {
         console.log(card)
